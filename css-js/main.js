@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Menambahkan delete button ke cell
     const deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete";
+    deleteButton.textContent = "Hapus";
     deleteButton.className = "delete-btn";
     deleteButton.addEventListener("click", function () {
       taskTable.deleteRow(newRow.rowIndex - 1); //
