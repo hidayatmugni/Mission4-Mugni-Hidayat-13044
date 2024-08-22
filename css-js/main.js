@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         levelCell.style.textDecoration = "none";
         completedCell.textContent = "";
         completedCell.classList.remove("completed");
-        updateTaskList(taskValue, checkbox.value);
+        
       }
     });
     actionCell.appendChild(checkbox);
