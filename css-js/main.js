@@ -22,10 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
 
     const taskInput = document.getElementById("task-input");
+    const dateInput = document.getElementById("date-input");
     const taskLevel = document.getElementById("task-level");
     const taskValue = taskInput.value;
     const taskLevelValue = taskLevel.value;
-    const dateValue = new Date().toLocaleDateString();
+    const dateValue = dateInput.value;
 
     // Menambahkan row ke table
     const newRow = taskTable.insertRow();
