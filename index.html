@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/css-js/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>MH.</h1>
+      </div>
+      <div class="profile">
+        <img src="/css-js/myprofil.png" alt="Profile" class="profile-img" />
+        <span>Welcome, Ngab!</span>
+      </div>
+    </header>
+
+    <section class="greeting">
+      <h1>Selamat datang, Ngab!</h1>
+      <p id="date"></p>
+    </section>
+
+    <section class="task-input">
+      <form id="task-form">
+        <label for="task-input">Buat Tugas</label>
+        <input type="text" id="task-input" placeholder="Masukan List Task" required />
+        <label for="date-input">Pilih Tanggal Deadline</label>
+        <input type="date" id="date-input" required />
+        <label for="task-level">Pilih Level</label>
+        <select id="task-level">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button type="submit">Tambah</button>
+      </form>
+    </section>
+
+    <section class="task-table">
+      <h2>Upcoming Tasks</h2>
+      <table id="task-table">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Date</th>
+            <th>Level</th>
+            <th>Action</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <div id="completed-section">
+      <h2>Completed Tasks ✅</h2>
+      <div id="completed-list"></div>
+    </div>
+
+    <section class="actions">
+      <button id="delete-all">Delete All Tasks</button>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Simple To-Do List by mugnihidayat. All rights reserved.</p>
+    </footer>
+
+    <script src="/css-js/main.js"></script>
+  </body>
+</html>
